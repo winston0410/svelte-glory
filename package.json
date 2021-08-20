@@ -1,0 +1,22 @@
+{
+  "name": "svelte-esbuild-starter",
+  "version": "0.0.1",
+  "description": "Starter for new Svelte application with ESBuild bundler ",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "node esbuild",
+    "dev": "node esbuild --dev",
+    "start": "npx derver --production --port=5000 public"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "derver": "^0.4.17",
+    "esbuild": "^0.12.21",
+    "esbuild-svelte": "^0.5.4",
+    "glory-svelte-preprocess": "^0.1.3",
+    "sass": "^1.38.0",
+    "svelte": "^3.42.1",
+    "svelte-preprocess": "^4.7.4"
+  }
+}
