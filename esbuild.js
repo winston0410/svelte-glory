@@ -32,7 +32,13 @@ build({
 
             preprocess: [
                 // Place here any Svelte preprocessors
-                sveltePreprocess(),
+                {
+                    async markup({ content ,filename }){
+                      return preprocess(content , [
+                        sveltePreprocess(),
+                      ] ,{ filename })
+                    }
+                },
                 gloryPreprocess(),
             ]
 
