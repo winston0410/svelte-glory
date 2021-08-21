@@ -1,3 +1,4 @@
+import { preprocess } from 'svelte/compiler'
 import { build } from "esbuild";
 import { derver } from "derver";
 import sveltePlugin from "esbuild-svelte";
