@@ -2,21 +2,21 @@ lockfileVersion: 5.3
 
 specifiers:
   derver: ^0.4.17
-  esbuild: ^0.12.21
+  esbuild: ^0.12.22
   esbuild-svelte: ^0.5.4
-  glory-svelte-preprocess: ^0.1.3
-  sass: ^1.38.0
-  svelte: ^3.42.1
-  svelte-preprocess: ^4.7.4
+  glory-svelte-preprocess: ^0.2.0
+  sass: ^1.38.1
+  svelte: ^3.42.3
+  svelte-preprocess: ^4.8.0
 
 devDependencies:
   derver: 0.4.17
-  esbuild: 0.12.21
-  esbuild-svelte: 0.5.4_esbuild@0.12.21
-  glory-svelte-preprocess: 0.1.3
-  sass: 1.38.0
-  svelte: 3.42.1
-  svelte-preprocess: 4.7.4_sass@1.38.0+svelte@3.42.1
+  esbuild: 0.12.22
+  esbuild-svelte: 0.5.4_esbuild@0.12.22
+  glory-svelte-preprocess: 0.2.0
+  sass: 1.38.1
+  svelte: 3.42.3
+  svelte-preprocess: 4.8.0_sass@1.38.1+svelte@3.42.3
 
 packages:
 
@@ -26,8 +26,8 @@ packages:
       fast-memoize: 2.5.2
     dev: true
 
-  /@types/node/16.6.2:
-    resolution: {integrity: sha512-LSw8TZt12ZudbpHc6EkIyDM3nHVWKYrAvGy6EAJfNfjusbwnThqjqxUKKRwuV3iWYeW/LYMzNgaq3MaLffQ2xA==}
+  /@types/node/16.7.1:
+    resolution: {integrity: sha512-ncRdc45SoYJ2H4eWU9ReDfp3vtFqDYhjOsKlFFUDEn8V1Bgr2RjYal8YT5byfadWIRluhPFU6JiDOl0H6Sl87A==}
     dev: true
 
   /@types/pug/2.0.5:
@@ -37,7 +37,7 @@ packages:
   /@types/sass/1.16.1:
     resolution: {integrity: sha512-iZUcRrGuz/Tbg3loODpW7vrQJkUtpY2fFSf4ELqqkApcS2TkZ1msk7ie8iZPB86lDOP8QOTTmuvWjc5S0R9OjQ==}
     dependencies:
-      '@types/node': 16.6.2
+      '@types/node': 16.7.1
     dev: true
 
   /anymatch/3.1.2:
@@ -85,17 +85,17 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /esbuild-svelte/0.5.4_esbuild@0.12.21:
+  /esbuild-svelte/0.5.4_esbuild@0.12.22:
     resolution: {integrity: sha512-7QgDYfnRW8U/oMo/eaVXr0Ptm/LRugziXMRvg3RGA2MB7dWyc/gYEdf2KThkHeYFFTFAmY7Ujg32gKrmHQE3qw==}
     peerDependencies:
       esbuild: '>=0.9.6'
     dependencies:
-      esbuild: 0.12.21
-      svelte: 3.42.1
+      esbuild: 0.12.22
+      svelte: 3.42.3
     dev: true
 
-  /esbuild/0.12.21:
-    resolution: {integrity: sha512-7hyXbU3g94aREufI/5nls7Xcc+RGQeZWZApm6hoBaFvt2BPtpT4TjFMQ9Tb1jU8XyBGz00ShmiyflCogphMHFQ==}
+  /esbuild/0.12.22:
+    resolution: {integrity: sha512-yWCr9RoFehpqoe/+MwZXJpYOEIt7KOEvNnjIeMZpMSyQt+KCBASM3y7yViiN5dJRphf1wGdUz1+M4rTtWd/ulA==}
     hasBin: true
     requiresBuild: true
     dev: true
@@ -125,12 +125,12 @@ packages:
       is-glob: 4.0.1
     dev: true
 
-  /glory-svelte-preprocess/0.1.3:
-    resolution: {integrity: sha512-9BsSt7XGS4IC4zoHlm3Bn6LYT4n9GJKijxbNaWW+JigOYDomEzs+578lI9MN76GY6vKCbj2f0MtivPLPH6Jbdw==}
+  /glory-svelte-preprocess/0.2.0:
+    resolution: {integrity: sha512-R/m4PMP06z6HeXwHHF9NLDiQOaNZGfn/J/svTIOcVCZb1R3SnkI9s4t6edQXNkzc04foWzyHncCj7mtNaZHl5g==}
     dependencies:
       '@blackblock/joli-string': 1.1.0
       magic-string: 0.25.7
-      svelte: 3.42.1
+      svelte: 3.42.3
     dev: true
 
   /is-binary-path/2.1.0:
@@ -185,8 +185,8 @@ packages:
       picomatch: 2.3.0
     dev: true
 
-  /sass/1.38.0:
-    resolution: {integrity: sha512-WBccZeMigAGKoI+NgD7Adh0ab1HUq+6BmyBUEaGxtErbUtWUevEbdgo5EZiJQofLUGcKtlNaO2IdN73AHEua5g==}
+  /sass/1.38.1:
+    resolution: {integrity: sha512-Lj8nPaSYOuRhgqdyShV50fY5jKnvaRmikUNalMPmbH+tKMGgEKVkltI/lP30PEfO2T1t6R9yc2QIBLgOc3uaFw==}
     engines: {node: '>=8.9.0'}
     hasBin: true
     dependencies:
@@ -204,8 +204,8 @@ packages:
       min-indent: 1.0.1
     dev: true
 
-  /svelte-preprocess/4.7.4_sass@1.38.0+svelte@3.42.1:
-    resolution: {integrity: sha512-mDAmaltQl6e5zU2VEtoWEf7eLTfuOTGr9zt+BpA3AGHo8MIhKiNSPE9OLTCTOMgj0vj/uL9QBbaNmpG4G1CgIA==}
+  /svelte-preprocess/4.8.0_sass@1.38.1+svelte@3.42.3:
+    resolution: {integrity: sha512-i9Z17cwGlp+kuSSv3kJWdAdAP2L26A5yMzHHdDj8YL+86sN64Yz5/gfjQp3Xb6fiaToo4sB+wTpid/23Gz0yvw==}
     engines: {node: '>= 9.11.2'}
     requiresBuild: true
     peerDependencies:
@@ -248,13 +248,13 @@ packages:
       '@types/pug': 2.0.5
       '@types/sass': 1.16.1
       detect-indent: 6.1.0
-      sass: 1.38.0
+      sass: 1.38.1
       strip-indent: 3.0.0
-      svelte: 3.42.1
+      svelte: 3.42.3
     dev: true
 
-  /svelte/3.42.1:
-    resolution: {integrity: sha512-XtExLd2JAU3T7M2g/DkO3UNj/3n1WdTXrfL63OZ5nZq7nAqd9wQw+lR4Pv/wkVbrWbAIPfLDX47UjFdmnY+YtQ==}
+  /svelte/3.42.3:
+    resolution: {integrity: sha512-pbdtdNZEx2GBqSM6XEgPoHbwtvWBwFLt/1bRmzsyXZO+i424wFnPe7O5B3GOJDPFSxPRztumAW3mL5LPzecWUg==}
     engines: {node: '>= 8'}
     dev: true
 

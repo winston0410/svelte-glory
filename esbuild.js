@@ -1,6 +1,7 @@
 import { build } from "esbuild";
 import { derver } from "derver";
 import sveltePlugin from "esbuild-svelte";
+import { preprocess } from 'svelte/compiler';
 import sveltePreprocess from "svelte-preprocess";
 import gloryPreprocess from "glory-svelte-preprocess";
 
@@ -32,7 +33,13 @@ build({
 
             preprocess: [
                 // Place here any Svelte preprocessors
-                sveltePreprocess(),
+                {
+                    async markup({ content, filename }) {
+                        return preprocess(content, [
+                            sveltePreprocess(),
+                        ], { filename })
+                    }
+                },
                 gloryPreprocess(),
             ]
 
