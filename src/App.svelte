@@ -7,7 +7,9 @@
 	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
 </main>
 
-<style lang="scss">
+<style lang="scss" global>
+	@import './scss/_normalize.scss';
+
 	.main {
 		text-align: center;
 		padding: 1em;

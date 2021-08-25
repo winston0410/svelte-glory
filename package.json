@@ -14,7 +14,8 @@
     "derver": "^0.4.17",
     "esbuild": "^0.12.22",
     "esbuild-svelte": "^0.5.4",
-    "glory-svelte-preprocess": "^0.2.0",
+    "glory-svelte-preprocess": "^0.2.2",
+    "postcss": "^8.3.6",
     "sass": "^1.38.1",
     "svelte": "^3.42.3",
     "svelte-preprocess": "^4.8.0"
