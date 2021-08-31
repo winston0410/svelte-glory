@@ -4,17 +4,19 @@ specifiers:
   derver: ^0.4.17
   esbuild: ^0.12.22
   esbuild-svelte: ^0.5.4
-  glory-svelte-preprocess: ^0.2.2
+  glory-svelte-preprocess: github:winston0410/glory-svelte-preprocess
   postcss: ^8.3.6
   sass: ^1.38.1
   svelte: ^3.42.3
   svelte-preprocess: ^4.8.0
 
+dependencies:
+  glory-svelte-preprocess: github.com/winston0410/glory-svelte-preprocess/f375d969592fc28a744214f96f0e9dec6b0583f2
+
 devDependencies:
   derver: 0.4.17
   esbuild: 0.12.22
   esbuild-svelte: 0.5.4_esbuild@0.12.22
-  glory-svelte-preprocess: 0.2.2
   postcss: 8.3.6
   sass: 1.38.1
   svelte: 3.42.3
@@ -26,7 +28,7 @@ packages:
     resolution: {integrity: sha512-HiiC7m35FBLy3eiCO4xBQaQQoJ9kv3N7LX7hCqMrjl7VFJ4Obqm7qlkq0WNMOFS/B/ZwazBgY6CTInZM0qlstA==}
     dependencies:
       fast-memoize: 2.5.2
-    dev: true
+    dev: false
 
   /@types/node/16.7.1:
     resolution: {integrity: sha512-ncRdc45SoYJ2H4eWU9ReDfp3vtFqDYhjOsKlFFUDEn8V1Bgr2RjYal8YT5byfadWIRluhPFU6JiDOl0H6Sl87A==}
@@ -108,7 +110,7 @@ packages:
 
   /fast-memoize/2.5.2:
     resolution: {integrity: sha512-Ue0LwpDYErFbmNnZSF0UH6eImUwDmogUO1jyE+JbN2gsQz/jICm1Ve7t9QT0rNSsfJt+Hs4/S3GnsDVjL4HVrw==}
-    dev: true
+    dev: false
 
   /fill-range/7.0.1:
     resolution: {integrity: sha512-qOo9F+dMUmC2Lcb4BbVvnKJxTPjCm+RRpe4gDuGrzkL7mEVl/djYSu2OdQ2Pa302N4oqkSg9ir6jaLWJ2USVpQ==}
@@ -129,14 +131,6 @@ packages:
     engines: {node: '>= 6'}
     dependencies:
       is-glob: 4.0.1
-    dev: true
-
-  /glory-svelte-preprocess/0.2.2:
-    resolution: {integrity: sha512-sp9HOEf9SMimPipLxZi/2Od53xRmpIz94MRGVC9aY0Bo4muLzKyl8RFPyEPAVQnGyL+KhrHbv+oCaI0agPrG0A==}
-    dependencies:
-      '@blackblock/joli-string': 1.1.0
-      magic-string: 0.25.7
-      svelte: 3.42.3
     dev: true
 
   /is-binary-path/2.1.0:
@@ -167,7 +161,7 @@ packages:
     resolution: {integrity: sha512-4CrMT5DOHTDk4HYDlzmwu4FVCcIYI8gauveasrdCu2IKIFOJ3f0v/8MDGJCDL9oD2ppz/Av1b0Nj345H9M+XIA==}
     dependencies:
       sourcemap-codec: 1.4.8
-    dev: true
+    dev: false
 
   /min-indent/1.0.1:
     resolution: {integrity: sha512-I9jwMn07Sy/IwOj3zVkVik2JTvgpaykDZEigL6Rx6N9LbMywwUSMtxET+7lVoDLLd3O3IXwJwvuuns8UB/HeAg==}
@@ -221,7 +215,7 @@ packages:
 
   /sourcemap-codec/1.4.8:
     resolution: {integrity: sha512-9NykojV5Uih4lgo5So5dtw+f0JgJX30KCNI8gwhz2J9A15wD0Ml6tjHKwf6fTSa6fAdVBdZeNOs9eJ71qCk8vA==}
-    dev: true
+    dev: false
 
   /strip-indent/3.0.0:
     resolution: {integrity: sha512-laJTa3Jb+VQpaC6DseHhF7dXVqHTfJPCRDaEbid/drOhgitgYku/letMUqOXFoWV0zIIUbjpdH2t+tYj4bQMRQ==}
@@ -283,7 +277,6 @@ packages:
   /svelte/3.42.3:
     resolution: {integrity: sha512-pbdtdNZEx2GBqSM6XEgPoHbwtvWBwFLt/1bRmzsyXZO+i424wFnPe7O5B3GOJDPFSxPRztumAW3mL5LPzecWUg==}
     engines: {node: '>= 8'}
-    dev: true
 
   /to-regex-range/5.0.1:
     resolution: {integrity: sha512-65P7iz6X5yEr1cwcgvQxbbIw7Uk3gOy5dIdtZ4rDveLqhrdJP+Li/Hx6tyK0NEb+2GCyneCMJiGqrADCSNk8sQ==}
@@ -291,3 +284,13 @@ packages:
     dependencies:
       is-number: 7.0.0
     dev: true
+
+  github.com/winston0410/glory-svelte-preprocess/f375d969592fc28a744214f96f0e9dec6b0583f2:
+    resolution: {tarball: https://codeload.github.com/winston0410/glory-svelte-preprocess/tar.gz/f375d969592fc28a744214f96f0e9dec6b0583f2}
+    name: glory-svelte-preprocess
+    version: 0.2.2
+    dependencies:
+      '@blackblock/joli-string': 1.1.0
+      magic-string: 0.25.7
+      svelte: 3.42.3
+    dev: false
