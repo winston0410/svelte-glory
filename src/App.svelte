@@ -1,13 +1,17 @@
 <script>
+	import Button from './Button.svelte';
 	export let name;
 </script>
 
 <main class="main">
 	<h1 class="h1">Hello {name}!</h1>
 	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
+	<Button>Button</Button>
 </main>
 
-<style lang="scss">
+<style lang="scss" global>
+	// @import './scss/_normalize.scss';
+
 	.main {
 		text-align: center;
 		padding: 1em;
